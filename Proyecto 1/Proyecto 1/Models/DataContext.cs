@@ -1,8 +1,10 @@
-﻿using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
+﻿
+
 
 namespace Proyecto_1.Models
+    
 {
+    using System.Data.Entity;
     public class DataContext:DbContext 
     {
         public DataContext():base("DefaultConnection")
@@ -10,5 +12,6 @@ namespace Proyecto_1.Models
 
         }
 
+        public System.Data.Entity.DbSet<Proyecto_1.Models.Modelo> Modeloes { get; set; }
     }
 }
