@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Proyecto_1.Models
 {
     public class Modelo
     {
-        [Required]
+        [Key]
         public int ModeloID { get; set; }
         [Required]
         public string Nombre { get; set; }
